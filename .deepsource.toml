@@ -1,3 +1,4 @@
+# .deepsource.toml
 version = 1
 
 [[analyzers]]
@@ -5,5 +6,15 @@ name = python
 enabled = true
 
 [[analyzers]]
-name = yml
+name = yaml
+enabled = true
+
+# Optional: exclude paths if needed
+exclude_paths = [
+    "venv/*",
+    "node_modules/*",
+    "build/*",
+]
+
+[autofix]
 enabled = true
