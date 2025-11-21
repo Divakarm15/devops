@@ -1,20 +1,23 @@
-# .deepsource.toml
 version = 1
 
+# Python analyzer
 [[analyzers]]
-name = python
+name = "python"
 enabled = true
 
+# YAML analyzer (for GitHub Actions workflows)
 [[analyzers]]
-name = yaml
+name = "yaml"
 enabled = true
 
-# Optional: exclude paths if needed
+# Exclude paths (optional)
 exclude_paths = [
     "venv/*",
     "node_modules/*",
-    "build/*",
+    "build/*"
 ]
 
+# Auto-fix simple issues
 [autofix]
 enabled = true
+
