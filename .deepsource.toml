@@ -5,12 +5,12 @@ version = 1
 name = "python"
 enabled = true
 
-# YAML analyzer (for GitHub Actions workflows)
+# GitHub Actions / Infra analyzer
 [[analyzers]]
-name = "yaml"
+name = "infra"
 enabled = true
 
-# Exclude paths (optional)
+# Optional: exclude files/folders
 exclude_paths = [
     "venv/*",
     "node_modules/*",
@@ -20,4 +20,3 @@ exclude_paths = [
 # Auto-fix simple issues
 [autofix]
 enabled = true
-
