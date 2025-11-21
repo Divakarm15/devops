@@ -5,16 +5,11 @@ version = 1
 name = "python"
 enabled = true
 
-# GitHub Actions / Infra analyzer
-[[analyzers]]
-name = "infra"
-enabled = true
-
 # Optional: exclude files/folders
 exclude_paths = [
     "venv/*",
-    "node_modules/*",
-    "build/*"
+    "build/*",
+    "__pycache__/*"
 ]
 
 # Auto-fix simple issues
