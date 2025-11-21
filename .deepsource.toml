@@ -5,5 +5,5 @@ name = python
 enabled = true
 
 [[analyzers]]
-name = yaml
+name = yml
 enabled = true
